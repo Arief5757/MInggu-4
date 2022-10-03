@@ -1,0 +1,76 @@
+<!!DOCTYPE html>
+<html>
+    <head>
+        <title>form HTML</title>
+        <style type="text/css"> 
+            body{ 
+                background-image: url('udinus.jpg');  
+                background-repeat: no-repeat;
+                background-size: 100%;
+             }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Latihan Web Form</h1>
+        <form name="form" method="post" action="output.php">
+            <table align="center">
+            <tr>
+                <td>NIM</td>
+                <td><input type="number" name="fnim" required><br></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="fnama" required> <br></td>
+            </tr>
+            <tr>
+                <td>Tgl Lahir</td>
+                <td><input type="date" name="ftgllhr" required><br></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="fkelamin" value="pria" required>Pria
+                <input type="radio" name="fkelamin" value="Wanita" required>Wanita</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text" name="Alamat" required></td>
+            </tr>
+            <tr>
+                <td>Program study</td>
+                <td>
+                    <select name="fprodi" required>
+                            <option>pilih</option>
+                            <option value="A10">S1 - Teknik Informatika</option>
+                            <option value="A11">S1 - Sistem Informasi</option>
+                            <option value="A12">D3 - Teknik Infoermatika</option>
+                  </select><br>
+                </td>
+            </tr>
+            <tr>
+                <td> Bidang Minat</td>
+                <td>
+                        <input type="checkbox" name="fbidang1"></input><label>Web Programing</label><br>
+                        <input type="checkbox" name="fbidang2"></input><label>Mobile Programing</label><br>
+                        <input type="checkbox" name="fbidang3"></input><label>Data Scine</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>No Tlp</td>
+                <td><input type="number" name="Nomor Hp" required></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" name="Email" required></td>
+            </tr>
+            <tr>
+                <td> Berkas CV</td>
+                <td><input type="file" name="ffile"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="fsubmit" value="Kirim"><br>
+                </td>
+            </tr>
+            </table>
+        </form>
+    </body>
